@@ -26,12 +26,12 @@ DEPENDENCIES:
   - EZAudio (from `https://github.com/rednebmas/EZAudio.git`)
   - Fabric
   - FMDB
-  - SBGraph (from `~/code/iOS/SBGraph`)
+  - SBGraph (from `https://github.com/rednebmas/SBGraph.git`)
   - SBMusicUtilities (from `https://github.com/rednebmas/SBMusicUtilities.git`)
   - SVProgressHUD
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AWSCore
     - AWSMobileAnalytics
     - Crashlytics
@@ -44,7 +44,7 @@ EXTERNAL SOURCES:
   EZAudio:
     :git: https://github.com/rednebmas/EZAudio.git
   SBGraph:
-    :path: "~/code/iOS/SBGraph"
+    :git: https://github.com/rednebmas/SBGraph.git
   SBMusicUtilities:
     :git: https://github.com/rednebmas/SBMusicUtilities.git
 
@@ -52,6 +52,9 @@ CHECKOUT OPTIONS:
   EZAudio:
     :commit: 217eb92c38bca97d4726bab733f153ed9f8da7f5
     :git: https://github.com/rednebmas/EZAudio.git
+  SBGraph:
+    :commit: dd4b51ecc89618b476dd661e4253b4c898353202
+    :git: https://github.com/rednebmas/SBGraph.git
   SBMusicUtilities:
     :commit: 311275b40e1bb4370302664c85dd334915592413
     :git: https://github.com/rednebmas/SBMusicUtilities.git
@@ -59,15 +62,15 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AWSCore: 917d84b32974136194a905b98c0ae25c9f3350b8
   AWSMobileAnalytics: 56ce9e671640fbd702f8ce52b0f128e525f3e51c
-  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Crashlytics: 220825473988b7f9a68dd171c4b09af59820bbf3
   EZAudio: 3b1cb4b6d7ebca68f0c2478576d75940aad4aa99
-  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  Fabric: 6d0efac502879e643049b9ee5ab115cbee494e9c
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
-  SBGraph: 1b426fe0038b3f9c733f77a2dc3e2e60cd83269d
+  SBGraph: d33e54a560a3295abab9f9d781c8e1c209f5deef
   SBMusicUtilities: 055b3951a82f29ff2e4357763caa332e8004207d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TPCircularBuffer: 4960a919e667280f7f38963d771f45871b64fe62
 
-PODFILE CHECKSUM: 4b3b17420ede6c360e4d5e14750eb6599847af7b
+PODFILE CHECKSUM: 644d721bdf4d89548b02f9a656e65c62c0005a9f
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.10.1
