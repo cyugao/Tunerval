@@ -69,15 +69,16 @@ static NSString *const sampleFileType = @"mp3";
 {
     NSString *sampleName = [NSString stringWithFormat:@"Piano.ff.%@", self.nameWithOctave];
     NSString *path;
-    if (samplesBaseFilePath == nil)
-    {
-        path = [[NSBundle mainBundle] pathForResource:sampleName ofType:sampleFileType];
-    }
-    else
-    {
-        NSString *filename = [NSString stringWithFormat:@"%@.%@", sampleName, sampleFileType];
-        path = [samplesBaseFilePath stringByAppendingPathComponent:filename];
-    }
+//    if (samplesBaseFilePath == nil)
+//    {
+//        path = [[NSBundle mainBundle] pathForResource:sampleName ofType:sampleFileType];
+//    }
+//    else
+//    {
+//        NSString *filename = [NSString stringWithFormat:@"%@.%@", sampleName, sampleFileType];
+//        path = [samplesBaseFilePath stringByAppendingPathComponent:filename];
+//    }
+    path = [[NSBundle mainBundle] pathForResource:sampleName ofType:sampleFileType];
     return path;
 }
 

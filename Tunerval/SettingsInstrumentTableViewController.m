@@ -169,14 +169,16 @@
 
 - (BOOL)isInstrumentAtIndexPurchased:(NSInteger)index
 {
+    
     if (index == 0) {
         return YES;
     }
     
     NSString *key = [NSString stringWithFormat:@"%@Purchased", self.instrumentIAPIDs[index]];
     BOOL purchased = [[self.defaults objectForKey:key] boolValue];
-    
-    return purchased;
+ 
+    return YES;
+//    return purchased;
 }
 
 - (void)initiatePurchaseForInstrumentAtIndex:(NSInteger)instrumentIndex
